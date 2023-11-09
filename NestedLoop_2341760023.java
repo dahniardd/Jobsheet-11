@@ -14,11 +14,14 @@ public class NestedLoop_2341760023{
             System.out.println();
         }
         for (int i = 0; i < temps.length; i++) {
+            double totalTemp = 0;
             System.out.print("Kota ke-" + (i + 1) + ": ");
             for (double temp : temps[i]) {
                 System.out.print(temp + " ");
+                totalTemp += temp;
             }
-            System.out.println();
+            double rata2Temp = totalTemp/temps[i].length;
+            System.out.println("Rata-Rata : " + rata2Temp);
         }
     }
 }
